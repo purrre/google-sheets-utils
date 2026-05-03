@@ -1,0 +1,45 @@
+#gsuContextMenu {
+  position: fixed;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  display: none;
+  z-index: 2147483647;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+#gsuCopyItem {
+  cursor: pointer;
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+#gsuContextMenu div:hover {
+  background-color: #f0f0f0;
+}
+
+#gsuToast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #202124;
+  color: #fff;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  max-width: 340px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 2147483647;
+  pointer-events: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+#gsuToast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Google Sheets Utilities</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h2>Google Sheets Utilities</h2>
+
+  <label class="toggleRow" for="enableCtrlCopy">
+    <input type="checkbox" id="enableCtrlCopy">
+    <span>Enable Ctrl/Cmd + C override</span>
+  </label>
+
+  <label class="toggleRow" for="suppressGooglePopups">
+    <input type="checkbox" id="suppressGooglePopups">
+    <span>Auto-close Google Sheets popups</span>
+  </label>
+
+  <button id="getPageContextBtn">API Helper</button>
+
+  <div id="status"></div>
+  <pre id="report"></pre>
+  <script src="popup.js"></script>
+</body>
+</html>

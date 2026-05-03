@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Google Sheets Utilities",
+  "version": "0.1",
+  "description": "Enhance Google Sheets",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://docs.google.com/spreadsheets/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://docs.google.com/spreadsheets/*"],
+    "js": ["content.js"],
+    "css": ["styles.css"]
+  }]
+}
